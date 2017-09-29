@@ -6,7 +6,7 @@ export class InMemoryDataService {
         name: 'Iron Man',
         realName: 'Tony Stark',
         location: 'Malibu',
-        image: 'ironman.jpg',
+        image: 'assets/ironman.jpg',
         fav: true
       },
       {
@@ -14,7 +14,7 @@ export class InMemoryDataService {
         name: 'Thor',
         realName: 'Thor Odinson',
         location: 'Asgard',
-        image: 'thor.jpg',
+        image: 'assets/thor.jpg',
         fav: false
       },
       {
@@ -22,7 +22,7 @@ export class InMemoryDataService {
         name: 'Black Widow',
         realName: 'Natasha Romanov',
         location: 'Russia?',
-        image: 'blackwidow.jpg',
+        image: 'assets/blackwidow.jpg',
         fav: false
       },
       {
@@ -30,7 +30,7 @@ export class InMemoryDataService {
         name: 'Captian America',
         realName: 'Steve Rogers',
         location: 'Brooklyn',
-        image: 'captainamerica.jpg',
+        image: 'assets/captainamerica.jpg',
         fav: true
       },
       {
@@ -38,7 +38,7 @@ export class InMemoryDataService {
         name: 'Dare Devil',
         realName: 'Matt Murdock',
         location: 'Hell\'s Kitchen',
-        image: 'daredevil.jpg',
+        image: 'assets/daredevil.jpg',
         fav: true
       },
       {
@@ -46,7 +46,7 @@ export class InMemoryDataService {
         name: 'Groot',
         realName: 'Groot',
         location: 'I am Groot',
-        image: 'groot.jpg',
+        image: 'assets/groot.jpg',
         fav: false
       },
       {
@@ -54,7 +54,7 @@ export class InMemoryDataService {
         name: 'Hulk',
         realName: 'Bruce Banner',
         location: 'Unknown',
-        image: 'hulk.jpg',
+        image: 'assets/hulk.jpg',
         fav: true
       },
       {
@@ -62,7 +62,7 @@ export class InMemoryDataService {
         name: 'Rocket Racoon',
         realName: 'Trash Panda',
         location: 'Galaxy',
-        image: 'rocket.jpg',
+        image: 'assets/rocket.jpg',
         fav: true
       },
       {
@@ -70,7 +70,7 @@ export class InMemoryDataService {
         name: 'Luke Cage',
         realName: 'Luke Cage',
         location: 'Harlem',
-        image: 'lukecage.jpg',
+        image: 'assets/lukecage.jpg',
         fav: false
       },
       {
@@ -78,7 +78,7 @@ export class InMemoryDataService {
         name: 'Jessica Jones',
         realName: 'Jessica Jones',
         location: 'New York',
-        image: 'jessicajones.jpg',
+        image: 'assets/jessicajones.jpg',
         fav: false
       },
       {
@@ -86,7 +86,7 @@ export class InMemoryDataService {
         name: 'Ant Man',
         realName: 'Scott Lang',
         location: 'San Fransisco',
-        image: 'antman.jpg',
+        image: 'assets/antman.jpg',
         fav: false
       },
     ];
