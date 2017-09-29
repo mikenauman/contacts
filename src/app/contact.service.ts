@@ -21,6 +21,16 @@ export class ContactService {
       .catch(this.handleError);
   }
 
+  getFavorites(): Promise<Array<Contact>> {
+    return this.http
+      .get(this.contactsUrl)
+      .toPromise()
+      .then((response) => {
+        return response.json().data.filter(contact => contact.fav) as Contact[];
+      })
+      .catch(this.handleError);
+  }
+
   getContact(id: number): Promise<Contact> {
     return this.getContacts()
       .then(contacts => contacts.find(contact => contact.id === id));

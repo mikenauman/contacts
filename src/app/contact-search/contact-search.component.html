@@ -1,0 +1,9 @@
+<div id="search-component">
+  <input #searchBox id="search-box" (keyup)="search(searchBox.value)" />
+  <div>
+    <div *ngFor="let contact of contacts | async"
+         (click)="gotoDetail(contact)" class="search-result" >
+      {{contact.name}}
+    </div>
+  </div>
+</div>

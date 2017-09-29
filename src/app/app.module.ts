@@ -12,6 +12,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DetailComponent } from './detail/detail.component';
+import { ListComponent } from './list/list.component';
+import { DetailPageComponent } from './detail-page/detail-page.component';
+import { ContactSearchComponent } from './contact-search/contact-search.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { DetailComponent } from './detail/detail.component';
     HeaderComponent,
     DashboardComponent,
     DetailComponent,
+    ListComponent,
+    DetailPageComponent,
+    ContactSearchComponent,
   ],
   imports: [
     BrowserModule,

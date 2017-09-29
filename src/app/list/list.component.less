@@ -1,0 +1,39 @@
+.contact {
+  background-color: #dbe9ff;
+  border-radius: 3px;
+  color: #0062b0;
+  width: 350px;
+  padding: 5px 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+
+  .name {
+    font-weight: bold;
+  }
+
+  .fav {
+    float: right;
+    img {
+      height: 18px;
+    }
+  }
+
+  &:hover {
+    background-color: #fff8e1;
+  }
+
+  &.selected {
+    background-color: #0062b0;
+    color: #ffffff;
+    .fav {
+      img {
+        height: 20px;
+      }
+    }
+  }
+}
+
+.list, .detail {
+  float: left;
+  width: 40%;
+}

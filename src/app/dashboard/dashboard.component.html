@@ -1,1 +1,20 @@
 <h1>Dashboard</h1>
+
+<h3>Favorite Contacts</h3>
+<div class="favorites">
+  <div class="favorite"
+    *ngFor="let favorite of favorites"
+    (click)="goToDetail(favorite)">
+    <div class="image">
+      <img src="{{favorite.image}}" alt="{{favorite.name}}">
+    </div>
+    <div class="name">
+      {{favorite.name}}
+    </div>
+  </div>
+</div>
+
+<h3>Contact Search</h3>
+<div class="search">
+  <rrd-contact-search></rrd-contact-search>
+</div>

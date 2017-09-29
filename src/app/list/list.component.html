@@ -1,0 +1,19 @@
+<h1>Contact List</h1>
+
+<div class="list">
+  <div class="contact"
+    *ngFor="let contact of contacts"
+    (click)="onSelect(contact)"
+    [class.selected]="contact === selectedContact">
+    <span>{{contact.name}}</span>
+    <span class="fav">
+      <img *ngIf="contact.fav"
+        src="assets/star.svg" alt="favorite">
+    </span>
+  </div>
+
+</div>
+
+<div class="detail" *ngIf="selectedContact">
+  <rrd-detail [contact]="selectedContact"></rrd-detail>
+</div>
