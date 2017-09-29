@@ -1,7 +1,7 @@
 export class Contact {
   id: number;
   name: string;
-  phone: string;
-  city: string;
-  desc: string;
+  location: string;
+  image: string;
+  fav: boolean;
 }
