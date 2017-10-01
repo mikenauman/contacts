@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { Contact } from '../contact';
 
@@ -9,9 +10,16 @@ import { Contact } from '../contact';
 })
 export class DetailComponent implements OnInit {
   @Input('contact') contact: Contact;
-  constructor() { }
+
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit() {
+  }
+
+  editContact() {
+    this.router.navigate(['/edit'], { queryParams: {id: this.contact.id} });
   }
 
 }

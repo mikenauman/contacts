@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'list', component: ListComponent },
   { path: 'detail/:id', component: DetailPageComponent },
+  { path: 'edit', loadChildren: './edit/edit.module#EditModule' }
 ];
 
 @NgModule({
