@@ -31,7 +31,7 @@ import { ContactSearchComponent } from './contact-search/contact-search.componen
     BrowserModule,
     AppRoutingModule,
     HttpModule,
-    InMemoryWebApiModule.forRoot(InMemoryDataService, { delay: 600 })
+    InMemoryWebApiModule.forRoot(InMemoryDataService, { delay: 150 })
   ],
   providers: [ContactService],
   bootstrap: [AppComponent]

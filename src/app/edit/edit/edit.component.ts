@@ -46,7 +46,6 @@ export class EditComponent implements OnInit {
           })
           .catch(error => this.error = error); // TODO: Display error message
     } else {
-      console.log(this.form.controls);
       this.form.controls['name'].setErrors({'required': true});
       this.form.controls['name'].markAsDirty();
     }

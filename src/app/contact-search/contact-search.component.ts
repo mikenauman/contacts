@@ -34,7 +34,7 @@ export class ContactSearchComponent implements OnInit {
 
   ngOnInit() {
     this.contacts = this.searchTerms
-      .debounceTime(300)        // wait for 300ms pause in events
+      .debounceTime(100)        // wait for 300ms pause in events
       .distinctUntilChanged()   // ignore if next search term is same as previous
       .switchMap(term => term   // switch to new observable each time
         // return the http search observable
