@@ -21,10 +21,11 @@
     "@angular/platform-browser": "^4.2.4",
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
+    "angular-in-memory-web-api": "^0.3.1",
     "core-js": "^2.4.1",
+    "rrd-library": "file:///Users/rr187873/agile_demo/rrd-library/dist/rrd-library-0.0.0.tgz",
     "rxjs": "^5.4.2",
-    "zone.js": "^0.8.14",
-    "angular-in-memory-web-api": "^0.3.1"
+    "zone.js": "^0.8.14"
   },
   "devDependencies": {
     "@angular/cli": "1.4.3",
