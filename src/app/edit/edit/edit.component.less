@@ -6,7 +6,16 @@
   padding: 5px 20px;
   border-radius: 3px;
 }
-
+.left {
+  float: left;
+  width: 350px;
+}
+.right {
+  float: left;
+  width: 400px;
+  margin-left: 65px;
+  margin-top: 20px;
+}
 label {
   display: block;
   margin-bottom: 24px;
@@ -18,18 +27,19 @@ label {
     font-weight: 600;
     width: 100px;
     span {
-      color: red;
+      color: #ee2838;
     }
   }
 
   &.invalid {
     input {
-      border: 1px solid red;
+      border: 1px solid #ee2838;
     }
     .error-message {
-      margin-left: 6px;
+      float: right;
       display: inline-block;
-      color: red;
+      color: #ee2838;
+      margin-right: -15px;
     }
   }
 }
@@ -51,5 +61,54 @@ button {
     color: #0062b0;
     background: #ffffff;
     text-decoration: none;
+  }
+}
+
+.detail {
+  border: 1px #c1c1c1 solid;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.image {
+  float: left;
+  margin-right: 50px;
+  height: 500px;
+  img {
+    height: 140px;
+    width: 140px;
+    border: 1px #282828 solid;
+    border-radius: 50%;
+  }
+}
+
+.info {
+  .label {
+    display: block;
+    color: #0062b0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .data {
+    display: block;
+    color: #282828;
+    font-size: 22px;
+  }
+
+  .name, .real-name {
+    margin-bottom: 24px;
+  }
+
+  .name {
+    .data {
+      font-weight: 600;
+    }
+    .fav {
+      float: right;
+      margin-top: 3px;
+      img {
+        height: 24px;
+      }
+    }
   }
 }

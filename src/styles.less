@@ -275,3 +275,31 @@ td,
 th {
 	padding: 0;
 }
+
+textarea,
+input[type=text],
+input[type=password],
+input[type=email] {
+  border: 1px solid #c1c1c1;
+  border-radius: 3px;
+  color: #282828;
+  height: 30px;
+  padding: 4px 4px 4px 10px;
+  width: 100%;
+  font-size: 13px;
+  &:hover {
+      background-color: #f4f4f4;
+  }
+  &:focus {
+      background-color: #f4f4f4;
+      border-color: #40a1f2;
+      box-shadow: none;
+      outline: 0;
+  }
+  &.has-error {
+      border-color: #ee2838;
+  }
+  &::placeholder {
+      color: #c1c1c1;
+  }
+}

@@ -3,38 +3,65 @@
 </div>
 <h1>{{title}}</h1>
 
-<form novalidate #f="ngForm" (ngSubmit)="save()">
-  <label [ngClass]="{
-    'invalid': name.invalid && (name.dirty || name.touched),
-    'valid': name.valid && (name.dirty || name.touched)
-   }">
-    <span class="label">Name <span>*</span></span>
-    <input type="text" name="name" [(ngModel)]="contact.name" #name="ngModel" required>
-    <div class="error-message" *ngIf="name.errors && (name.dirty || name.touched)">
-      Name is required.
+<div class="left">
+  <form novalidate #f="ngForm" (ngSubmit)="save()">
+    <label [ngClass]="{'invalid': name.invalid && (name.dirty || name.touched)}">
+      <span class="label">Name <span>*</span></span>
+      <div class="error-message" *ngIf="name.errors && (name.dirty || name.touched)">
+        Name is required
+      </div>
+      <input type="text" name="name" [(ngModel)]="contact.name" #name="ngModel" required>
+    </label>
+
+    <label>
+      <span class="label">Real Name</span>
+      <input type="text" name="realName" [(ngModel)]="contact.realName" #realName="ngModel">
+    </label>
+
+    <label>
+      <span class="label">Location</span>
+      <input type="text" name="location" [(ngModel)]="contact.location" #location="ngModel">
+    </label>
+
+    <label>
+      <span class="label">Image</span>
+      <input type="text" name="image" [(ngModel)]="contact.image" #image="ngModel">
+    </label>
+
+    <label>
+      <span class="label">Favorite</span>
+      <input type="checkbox" name="fav" [(ngModel)]="contact.fav" #fav="ngModel">
+    </label>
+
+    <button type="submit">Save</button>
+
+  </form>
+</div>
+
+<div class="right">
+  <div class="detail" *ngIf="contact.id">
+    <div class="image">
+      <img src="{{contact.image}}" alt="{{contact.name}}">
     </div>
-  </label>
+    <div class="info">
+      <div class="name">
+        <span class="label">Name:</span>
+        <span class="data">
+          {{contact.name}}
+          <span *ngIf="contact.fav" class="fav">
+            <img src="assets/star.svg" alt="Favorite">
+          </span>
+        </span>
+      </div>
+      <div class="real-name">
+        <span class="label">Real Name:</span>
+        <span class="data">{{contact.realName}}</span>
+      </div>
+      <div class="loacation">
+        <span class="label">Location:</span>
+        <span class="data">{{contact.location}}</span>
+      </div>
+    </div>
+  </div>
 
-  <label>
-    <span class="label">Real Name</span>
-    <input type="text" name="realName" [(ngModel)]="contact.realName" #realName="ngModel">
-  </label>
-
-  <label>
-    <span class="label">Location</span>
-    <input type="text" name="location" [(ngModel)]="contact.location" #location="ngModel">
-  </label>
-
-  <label>
-    <span class="label">Image</span>
-    <input type="text" name="image" [(ngModel)]="contact.image" #image="ngModel">
-  </label>
-
-  <label>
-    <span class="label">Favorite</span>
-    <input type="checkbox" name="fav" [(ngModel)]="contact.fav" #fav="ngModel">
-  </label>
-
-  <button type="submit">Save</button>
-
-</form>
+</div>
