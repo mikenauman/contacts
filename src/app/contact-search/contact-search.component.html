@@ -1,8 +1,11 @@
 <div id="search-component">
-  <input #searchBox id="search-box" type="text" (keyup)="search(searchBox.value)" />
+  <input #searchBox id="search-box" tabindex="1" type="text"
+    (keyup)="search(searchBox.value)" />
   <div>
-    <div *ngFor="let contact of contacts | async"
-         (click)="gotoDetail(contact)" class="search-result" >
+    <div *ngFor="let contact of contacts | async; let i = index"
+         class="search-result" tabindex="{{i + 2}}"
+         (click)="gotoDetail(contact)"
+         (keyup.enter)="gotoDetail(contact)" >
       {{contact.name}}
     </div>
   </div>

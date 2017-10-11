@@ -15,6 +15,7 @@ import { DetailComponent } from './detail/detail.component';
 import { ListComponent } from './list/list.component';
 import { DetailPageComponent } from './detail-page/detail-page.component';
 import { ContactSearchComponent } from './contact-search/contact-search.component';
+import { OrderByPipe } from './pipes/order-by.pipe';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ContactSearchComponent } from './contact-search/contact-search.componen
     ListComponent,
     DetailPageComponent,
     ContactSearchComponent,
+    OrderByPipe,
   ],
   imports: [
     BrowserModule,

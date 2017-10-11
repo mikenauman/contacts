@@ -31,7 +31,7 @@ export class InMemoryDataService {
         realName: 'Steve Rogers',
         location: 'Brooklyn',
         image: 'assets/captainamerica.jpg',
-        fav: true
+        fav: false
       },
       {
         id: 15,
@@ -71,7 +71,7 @@ export class InMemoryDataService {
         realName: 'Luke Cage',
         location: 'Harlem',
         image: 'assets/lukecage.jpg',
-        fav: false
+        fav: true
       },
       {
         id: 20,
@@ -87,6 +87,86 @@ export class InMemoryDataService {
         realName: 'Scott Lang',
         location: 'San Fransisco',
         image: 'assets/antman.jpg',
+        fav: false
+      },
+      {
+        id: 22,
+        name: 'Black Panther',
+        realName: 'T\'Challa',
+        location: 'Wakanda',
+        image: 'assets/blackpanther.jpg',
+        fav: false
+      },
+      {
+        id: 23,
+        name: 'Captain Marvel',
+        realName: 'Carol Danvers',
+        location: 'Washington D.C.',
+        image: 'assets/captainmarvel.jpg',
+        fav: false
+      },
+      {
+        id: 24,
+        name: 'Falcon',
+        realName: 'Sam Wilson',
+        location: 'New York',
+        image: 'assets/falcon.jpg',
+        fav: false
+      },
+      {
+        id: 25,
+        name: 'Hawkeye',
+        realName: 'Clint Bartonhow',
+        location: 'Secret House',
+        image: 'assets/hawkeye.jpg',
+        fav: false
+      },
+      {
+        id: 26,
+        name: 'Scarlet Witch',
+        realName: 'Wanda Maximoff',
+        location: 'Transia',
+        image: 'assets/scarletwitch.jpg',
+        fav: false
+      },
+      {
+        id: 27,
+        name: 'Drax',
+        realName: 'Arthur Douglas',
+        location: 'Galaxy',
+        image: 'assets/drax.jpg',
+        fav: false
+      },
+      {
+        id: 28,
+        name: 'Gamora',
+        realName: 'Gamora',
+        location: 'Galaxy',
+        image: 'assets/gamora.jpg',
+        fav: false
+      },
+      {
+        id: 29,
+        name: 'Star-Lord',
+        realName: 'Peter Quill',
+        location: 'Galaxy',
+        image: 'assets/starlord.jpg',
+        fav: false
+      },
+      {
+        id: 30,
+        name: 'Iron Fist',
+        realName: 'Danny Rand',
+        location: 'New York',
+        image: 'assets/ironfist.jpg',
+        fav: false
+      },
+      {
+        id: 31,
+        name: 'Punisher',
+        realName: 'Frank Castle',
+        location: 'Queens',
+        image: 'assets/punisher.jpg',
         fav: false
       },
     ];

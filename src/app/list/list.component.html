@@ -2,7 +2,7 @@
 
 <div class="list">
   <div class="contact"
-    *ngFor="let contact of contacts"
+    *ngFor="let contact of contacts | orderBy: 'name'"
     (click)="onSelect(contact)"
     [class.selected]="contact === selectedContact">
     <span>{{contact.name}}</span>
