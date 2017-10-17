@@ -1,8 +1,6 @@
 Master and Step-1 branch should be the same. To see the changes in each step check out the appropriate branch. If you want to run Step-2 or Step-3 you will need to download the rrd-library and change your package.json file to link to where you stored it locally.
 
-You can download the rrd-library repo from here, then follow the directions there to build it.
-
-OR you can get the tar file from Google Drive at: https://drive.google.com/a/rrd.com/file/d/0Bz_ZIIaKjmfkM1J4aFd2cllBXzQ/view?usp=sharing
+You can download the rrd-library repo from https://github.com/mikenauman/rrd-libarary, then link to the tgz file in the dist folder from your package.json file. You can also follow the directions on that readme page for how to build that library for deployment.
 
 # Contacts
 
