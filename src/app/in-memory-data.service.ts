@@ -27,7 +27,7 @@ export class InMemoryDataService {
       },
       {
         id: 14,
-        name: 'Captian America',
+        name: 'Captain America',
         realName: 'Steve Rogers',
         location: 'Brooklyn',
         image: 'assets/captainamerica.jpg',
@@ -44,7 +44,7 @@ export class InMemoryDataService {
       {
         id: 16,
         name: 'Groot',
-        realName: 'Groot',
+        realName: 'I am Groot',
         location: 'I am Groot',
         image: 'assets/groot.jpg',
         fav: false
@@ -61,7 +61,7 @@ export class InMemoryDataService {
         id: 18,
         name: 'Rocket Racoon',
         realName: 'Trash Panda',
-        location: 'Galaxy',
+        location: 'Galaxy Somewhere',
         image: 'assets/rocket.jpg',
         fav: true
       },
@@ -133,7 +133,7 @@ export class InMemoryDataService {
         id: 27,
         name: 'Drax',
         realName: 'Arthur Douglas',
-        location: 'Galaxy',
+        location: 'Galaxy Somewhere',
         image: 'assets/drax.jpg',
         fav: false
       },
@@ -141,7 +141,7 @@ export class InMemoryDataService {
         id: 28,
         name: 'Gamora',
         realName: 'Gamora',
-        location: 'Galaxy',
+        location: 'Galaxy Somewhere',
         image: 'assets/gamora.jpg',
         fav: false
       },
@@ -149,7 +149,7 @@ export class InMemoryDataService {
         id: 29,
         name: 'Star-Lord',
         realName: 'Peter Quill',
-        location: 'Galaxy',
+        location: 'Galaxy Somewhere',
         image: 'assets/starlord.jpg',
         fav: false
       },
